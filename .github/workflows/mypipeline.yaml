@@ -19,5 +19,5 @@ jobs:
         - name: cowsay something
           uses: mscoutermarsh/cowsays-action@master
           with: 
-            text: 'hello, dipsa56'
-            color: blue
+            text: ${{ github.ref_name }}
+            color: 'blue'
