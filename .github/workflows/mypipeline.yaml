@@ -12,3 +12,6 @@ jobs:
 
         - name: what is the time on the runner
           run: date
+
+        - name: list filesystem 
+          run: ls -l /
