@@ -12,7 +12,7 @@ jobs:
         - name: cowsay something
           uses: mscoutermarsh/cowsays-action@master
           with: 
-            text: ${{ github.event.head_commit.message }}
+            text: ${{ vars.USERNAME }} ${{ github.event.head_commit.message }} ${{ secrets.MY_PASSWORD }}
             color: 'blue'
 
         - name: checkout the repo
